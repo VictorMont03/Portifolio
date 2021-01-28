@@ -8,5 +8,5 @@ Meu primeiro portifólio.
  ## Icones
 :package: Novas Funcionalidades
 :up: Atualização
-:beatle: Correção de bugs
+:bug: Correção de bugs
 :checkered_flag: Release
