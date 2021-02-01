@@ -323,6 +323,117 @@
     border-radius: 200px;
 }
 
+.projetos{
+    background-color: rgba(0, 0, 0, .03);
+}
+
+.cada-projeto{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-projetos h1{
+    font-family: "Baloo Da 2", serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color:  #4b4b4b;
+    border-bottom: solid 3px #232377; /*linha*/
+    margin-bottom: 1.8rem;
+}
+
+.card{
+    width: 16rem;
+    height: 24rem;
+    position: relative;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    border-radius: .6rem;
+    background-color: #030303bb;
+}
+
+.card-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    border-radius: .6rem;
+    transition: opacity 1s;
+}
+
+.card:hover .card-img{
+    opacity: .7;
+}
+
+.card-info{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, .6);
+    box-shadow: 0 .5rem 3rem rgba(0, 0, 0, .7);
+    background-color: #0e0e0e69;
+    transition: all 1s;
+}
+
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-info h2{
+    font-family: "Baloo Da 2", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #cccccc;
+}
+
+
+.card-info h3{
+    font-family: "Mulish", serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #cccccc;
+}
+
+.card-info p{
+    font-family: "Mulish", serif;
+    font-size: .9rem;
+    font-weight: 300;
+    width: 80%;
+    color: #cccccc;
+    padding: .6rem;
+}
+
+.card-info button{
+    width: 7rem;
+    height: 2rem;
+    background: #ff00cc; 
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  
+    background: linear-gradient(to right, #333399, #ff00cc);
+    border-radius: 15px;
+    border: 0;
+    cursor: pointer;
+    color: #cccccc;
+    font-family: "Josefin Slab", serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: .7rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, .4);
+    box-shadow: 0 .5rem 3rem rgba(0, 0, 0, .4);
+    
+}
+
 
 /*-----------------------------------
 
