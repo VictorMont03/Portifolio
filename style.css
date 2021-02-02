@@ -181,6 +181,7 @@
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 50;
 }
 
 .show-menu .sidebar{
@@ -432,6 +433,119 @@
     text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, .4);
     box-shadow: 0 .5rem 3rem rgba(0, 0, 0, .4);
     
+}
+
+.sessao-contato{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .03), rgba(22,22,22,.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato{
+    width: 60%;
+    height: 27rem;
+    display: flex;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, .4);
+    border-radius: 10px;
+}
+
+.contato-esquerda{
+    width: 35%;
+    background:
+        linear-gradient(rgba(0, 0, 0, .03), rgba(22,22,22,.9)),
+        url('imagens/contato.jpg');
+    background-size: cover;
+    opacity: .8;
+    border-radius: 10px;
+}
+
+.contato-direita{
+    width: 65%;
+}
+
+.contato-direita h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    font-family: "Baloo da 2", serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-shadow: 0 .5rem 2rem rgba(0,0,0,.6);
+    width: 100%;
+}
+
+.contato-direita form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.field{
+    background: transparent;
+    border: 0;
+    width: 20rem;
+    font-size: 1.2rem;
+    font-family: "Josefin Slab", serif;
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid #cccccc;
+    height: 3.5rem;
+    outline: none;
+}
+
+.input-group{
+    position: relative;
+}
+
+.field-label{
+    position: absolute;
+    left: 0;
+    font-family: "Mulish", serif;
+    text-transform: uppercase;
+    top: 2rem;
+    transition: all .5s;
+}
+
+.field:focus ~ label{
+    top: 0;
+}
+
+.field:focus{
+    border-bottom: 1px dashed;
+}
+
+.input-group textarea{
+    padding-top: 1.5rem;
+    max-width: 30rem;
+    max-height: 8rem;
+}
+
+.send{
+    text-transform: uppercase;
+    color: rgba(226, 224, 224, 0.884);
+    background: #ff00cc; 
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  
+    background: linear-gradient(to right, #333399, #ff00cc); 
+    border-radius: 10px;
+    width: 200px;
+    height: 2rem;
+    font-size: 1.1rem;
+    font-family: "Mulish", serif;
+    cursor: pointer;
+    box-shadow: 0 .5rem 2rem rgba(20, 20, 20, 0.3);
+    align-items: center;
+    margin-top: 1.5rem;
+    transition: all .5s;
+}
+
+.send:hover{
+    font-weight: bolder;
+    height: 2.1rem;
+    width: 210px;
 }
 
 
