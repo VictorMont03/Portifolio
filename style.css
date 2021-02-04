@@ -9,8 +9,11 @@
     text-decoration: none;/*retira sublinhado*/
 }
 
+html{
+    scroll-behavior: smooth; /*rolagem entre sessões suavizada*/
+}
+
 .hamburguer{
-    /*background-color: red;*/
     width:2rem;
     height:2rem;
     position: fixed; /*fixa msm com rolagem de tela*/
@@ -165,12 +168,12 @@
     box-sizing: border-box;
     position: relative;
     animation: move 3s;
+    transition: all 3s;
 }
 
 .banner button:hover{
-    background: #ff00cc; 
-    background: -webkit-linear-gradient(to left, #333399, #ff00cc);  
-    background: linear-gradient(to left, #333399, #ff00cc); 
+    background: black;
+    opacity: .8;
 }
 
 .sidebar{
@@ -612,6 +615,64 @@
     border-radius: 5px;
 }
 
+footer{
+    width: 100%;
+    height: 7rem;
+    background: black;
+    display: flex;
+    justify-content: center; 
+}
+
+.rodape{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Josefin Slab", serif;
+    padding-top: 1rem;
+}
+.rodape p{
+    font-size: 1.2rem;
+    color: rgb(226, 225, 225);
+}
+
+.social-list{
+    font-size:1.5rem;
+}
+
+.social-list i{
+    transition: .5s;
+}
+
+.social-list i:hover{
+    color: #ff00cc;
+}
+
+.social-list a{
+    margin: 0rem 2rem;
+}
+.social-list ul{
+    display: flex;
+}
+
+#voltar-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: #ff00cc;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 .2rem .8rem rgba(0,0,0,.2);
+    transition: all .5s;
+}
+
+#voltar-topo:hover{
+    background-color: #333399;
+}
 
 /*-----------------------------------
 

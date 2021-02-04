@@ -18,24 +18,27 @@
             <div class="line" id="line3"></div>
             <span>Fechar</span>
         </div>
-        <header>
+        <header id="link-home">
             <div class="wrapper">
                 <img src="imagens/bg4.jpg" alt="" />
             </div>
             <div class="banner">
                 <h1>Web Developer Student</h1>
                 <p>Victor Monteiro Ribeiro</p>
-                <button>Saiba mais</button>
+                <a href="#link-conhecimentos">
+                    <button>Saiba mais</button>
+                </a>
+                
             </div> 
         </header>
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu_item"><a href="#" class="menu_link">Home</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Conhecimentos</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Projetos</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Contato</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Orçamento</a></li>
+                    <li class="menu_item"><a href="#link-home" class="menu_link">Home</a></li>
+                    <li class="menu_item"><a href="#link-conhecimentos" class="menu_link">Conhecimentos</a></li>
+                    <li class="menu_item"><a href="#link-projetos" class="menu_link">Projetos</a></li>
+                    <li class="menu_item"><a href="#link-contatos" class="menu_link">Contato</a></li>
+                    <li class="menu_item"><a href="#link-orcamento" class="menu_link">Orçamento</a></li>
                 </ul>
             </nav>
             <div class="social_media">
@@ -46,7 +49,7 @@
         </aside>
 
 
-        <section class="conhecimentos">
+        <section class="conhecimentos" id="link-conhecimentos">
             <div class="cabecalho">
                 <h1>Conhecimentos</h1>
             </div>
@@ -116,7 +119,7 @@
             </div>  
         </section>
 
-        <section class="projetos">
+        <section class="projetos" id="link-projetos">
             <div class="header-projetos">
                 <h1>Projetos</h1>
             </div>
@@ -158,7 +161,7 @@
             </div>
         </section>
 
-        <section class="sessao-contato">
+        <section class="sessao-contato" id="link-contatos">
             <div class="contato">
                 <div class="contato-esquerda"></div>
                 <div class="contato-direita">
@@ -182,7 +185,7 @@
             </div>
         </section>
 
-        <section class="sessao-orcamento">
+        <section class="sessao-orcamento" id="link-orcamento">
             <div class="orcamento">
                 <h1>Faça um orçamento</h1>
                 <form>
@@ -207,6 +210,30 @@
                 </form>
             </div>
         </section>
+
+        <footer id="link-rodape">
+            <div class="rodape">
+                <p>
+                    Copyright &copy; 2021, Victor Monteiro - Todos os direitos reservados
+                </p>
+                <div class="social-list">
+                    <ul>
+                        <li class="li">
+                            <a href="https://www.instagram.com/victor9monteiro/" target="_blank>"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="li">
+                            <a href="https://github.com/VictorMont03" target="_blank"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li class="li">
+                            <a href="https://www.linkedin.com/in/victor-monteiro-0258591b0/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+        </footer>
+        
+        <a href="#link-home" id="voltar-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </div>
 </body>
     <script src="script.js"></script>
