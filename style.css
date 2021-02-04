@@ -438,7 +438,7 @@
 .sessao-contato{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, .03), rgba(22,22,22,.9));
+    background: linear-gradient(rgba(0, 0, 0, .03), rgba(0, 0, 0, 0.9));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -455,7 +455,7 @@
 .contato-esquerda{
     width: 35%;
     background:
-        linear-gradient(rgba(0, 0, 0, .03), rgba(22,22,22,.9)),
+        linear-gradient(rgba(0, 0, 0, .03), rgba(0, 0, 0, 0.9)),
         url('imagens/contato.jpg');
     background-size: cover;
     opacity: .8;
@@ -531,6 +531,7 @@
     background: -webkit-linear-gradient(to right, #333399, #ff00cc);  
     background: linear-gradient(to right, #333399, #ff00cc); 
     border-radius: 10px;
+    border: 0;
     width: 200px;
     height: 2rem;
     font-size: 1.1rem;
@@ -540,12 +541,75 @@
     align-items: center;
     margin-top: 1.5rem;
     transition: all .5s;
+    grid-column: 2;
 }
 
 .send:hover{
     font-weight: bolder;
     height: 2.1rem;
     width: 210px;
+}
+
+.sessao-orcamento{
+    width: 100%;
+    height: 100vh;
+    background: url('imagens/orcamento-img.jpg');
+    background-size: 1000px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orcamento{
+    width: 60%;
+    height: 80%;
+    color: white;
+    background-color: #7a79798f;
+    border-radius: 10px;
+    box-shadow: 0 .5rem 3rem rgba(0, 0, 0, .9);
+    position: relative;
+}
+
+.sessao-orcamento h1{
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    background: #ff00cc; 
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);  
+    background: linear-gradient(to right, #333399, #ff00cc); 
+    padding: 0rem 3rem;
+    font-family: "Baloo Da 2", serif;
+    font-weight: 300;
+    font-size: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 .5rem 5rem rgba(0, 0, 0, .7);
+    text-shadow: 0 .5rem 2rem rgba(0, 0, 0, .5);
+}
+
+.sessao-orcamento form{
+    margin: 7rem 3rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem /*espaço entre colunas*/;
+    row-gap: 1.8rem;/*espaço entre linhas*/
+}
+
+.sessao-orcamento label{
+    font-family: "Josefin Slab", serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.sessao-orcamento input[type="number"]{
+    font-family: "Josefin Slab", serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background: transparent;
+    color: #fff;
+    box-shadow: 0px .2rem 2rem rgba(0, 0, 0, .3);
+    width: 200px;
+    border-radius: 5px;
 }
 
 
