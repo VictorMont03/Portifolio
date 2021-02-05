@@ -615,6 +615,10 @@ html{
     border-radius: 5px;
 }
 
+#preco{
+    margin: 2rem 0rem;
+}
+
 footer{
     width: 100%;
     height: 7rem;
